@@ -1,0 +1,56 @@
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[project]
+name = "quorumz"
+dynamic = ["version"]
+description = "Python client for the Sense by Quorumz agent API: geo-tagged news split into viewpoints, paid by API key or x402."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Quorumz", email = "support@quorumz.com" }]
+keywords = ["quorumz", "news", "geopolitics", "ai-agents", "x402", "langchain", "api-client"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Topic :: Internet :: WWW/HTTP",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Typing :: Typed",
+]
+dependencies = ["httpx>=0.23,<1"]
+
+[project.optional-dependencies]
+x402 = ["eth-account>=0.10"]
+langchain = ["langchain-core>=0.3"]
+
+[project.urls]
+Homepage = "https://sense.quorumz.com/agents"
+Documentation = "https://sense.quorumz.com/agents/docs"
+Repository = "https://github.com/Quorumz/quorumz-python"
+Issues = "https://github.com/Quorumz/quorumz-python/issues"
+
+[dependency-groups]
+dev = ["pytest>=8", "respx>=0.21"]
+
+[tool.hatch.version]
+path = "src/quorumz/_version.py"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/quorumz"]
+
+[tool.hatch.build.targets.sdist]
+include = ["src/quorumz", "tests", "examples", "README.md", "LICENSE"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"

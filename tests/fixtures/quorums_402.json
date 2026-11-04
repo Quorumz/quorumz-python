@@ -1,0 +1,190 @@
+{
+  "_comment": "Captured live from GET https://api.quorumz.com/api/agent/v1/quorums?country=LB&limit=2 with no key, 2026-11-04.",
+  "status": 402,
+  "headers": {
+    "content-type": "application/json",
+    "payment-required": "eyJ4NDAyVmVyc2lvbiI6MiwicmVzb3VyY2UiOnsidXJsIjoiaHR0cHM6Ly9hcGkucXVvcnVtei5jb20vYXBpL2FnZW50L3YxL3F1b3J1bXMiLCJkZXNjcmlwdGlvbiI6Ik9uZSBzdG9yeSwgdGhlIHZpZXdwb2ludHMgYmVpbmcgZXhwcmVzc2VkLCBhbmQgdGhlIHBvc3RzIHN1cHBvcnRpbmcgZWFjaCB2aWV3cG9pbnQuIiwibWltZVR5cGUiOiJhcHBsaWNhdGlvbi9qc29uIiwic2VydmljZU5hbWUiOiJRdW9ydW16IiwidGFncyI6WyJuZXdzIiwicXVvcnVtIiwiZ2VvcG9saXRpY3MiXSwiaWNvblVybCI6Imh0dHBzOi8vc2Vuc2UucXVvcnVtei5jb20vYnJhbmQvcXVvcnVtei10aWxlLTUxMi5wbmcifSwiYWNjZXB0cyI6W3sic2NoZW1lIjoiZXhhY3QiLCJuZXR3b3JrIjoiZWlwMTU1Ojg0NTMiLCJhbW91bnQiOiIyMDAwMCIsImFzc2V0IjoiMHg4MzM1ODlmQ0Q2ZURiNkUwOGY0YzdDMzJENGY3MWI1NGJkQTAyOTEzIiwicGF5VG8iOiIweDljZTkyOTUzZDMzMjM3YWYwNjFjNmIxYWEyOWM1OTdjODY1NmI1NDciLCJtYXhUaW1lb3V0U2Vjb25kcyI6MzAwLCJleHRyYSI6eyJuYW1lIjoiVVNEIENvaW4iLCJ2ZXJzaW9uIjoiMiJ9fSx7InNjaGVtZSI6ImV4YWN0IiwibmV0d29yayI6ImVpcDE1NToxMzciLCJhbW91bnQiOiIyMDAwMCIsImFzc2V0IjoiMHgzYzQ5OWM1NDJjRUY1RTM4MTFlMTE5MmNlNzBkOGNDMDNkNWMzMzU5IiwicGF5VG8iOiIweDljZTkyOTUzZDMzMjM3YWYwNjFjNmIxYWEyOWM1OTdjODY1NmI1NDciLCJtYXhUaW1lb3V0U2Vjb25kcyI6MzAwLCJleHRyYSI6eyJuYW1lIjoiVVNEIENvaW4iLCJ2ZXJzaW9uIjoiMiJ9fSx7InNjaGVtZSI6ImV4YWN0IiwibmV0d29yayI6ImVpcDE1NTo0MjE2MSIsImFtb3VudCI6IjIwMDAwIiwiYXNzZXQiOiIweGFmODhkMDY1ZTc3YzhjQzIyMzkzMjdDNUVEYjNBNDMyMjY4ZTU4MzEiLCJwYXlUbyI6IjB4OWNlOTI5NTNkMzMyMzdhZjA2MWM2YjFhYTI5YzU5N2M4NjU2YjU0NyIsIm1heFRpbWVvdXRTZWNvbmRzIjozMDAsImV4dHJhIjp7Im5hbWUiOiJVU0QgQ29pbiIsInZlcnNpb24iOiIyIn19XSwiZXh0ZW5zaW9ucyI6eyJiYXphYXIiOnsiaW5mbyI6eyJpbnB1dCI6eyJ0eXBlIjoiaHR0cCIsIm1ldGhvZCI6IkdFVCIsInF1ZXJ5UGFyYW1zIjp7ImNvdW50cnkiOiJMQiIsImxpbWl0IjoiMiJ9fSwib3V0cHV0Ijp7InR5cGUiOiJqc29uIiwiZXhhbXBsZSI6eyJzdHJlYW0iOiJxdW9ydW0iLCJmaWx0ZXIiOnsiY291bnRyeSI6IkxCIn0sInF1b3J1bXMiOlt7InF1b3J1bV9pZCI6InFybV83YzFlIiwiaGVhZGxpbmUiOiJCb3JkZXIgY3Jvc3NpbmcgY2xvc2VkIGFmdGVyIGZsb29kIGRhbWFnZSIsInN1bW1hcnkiOiJUd28gcmVhZGluZ3Mgb2YgdGhlIGNsb3N1cmU6IGEgc2hvcnQgcmVwYWlyIG9yIGEgbG9uZyBkaXZlcnNpb24gb2YgZnJlaWdodC4iLCJjYXRlZ29yeSI6ImluZnJhc3RydWN0dXJlIiwiY291bnRyaWVzIjpbIkxCIl0sInN1cHBvcnRfY291bnQiOjU1LCJjb25maWRlbmNlIjowLjY4LCJpc19hbHBoYSI6dHJ1ZSwidXBkYXRlZF9hdCI6IjIwMjYtMTAtMjdUMDk6NDA6MDBaIiwidmlld3BvaW50cyI6W3sidmlld3BvaW50X2lkIjoib3BuXzhmMmMiLCJsYWJlbCI6IlRoZSBjbG9zdXJlIGlzIHRlbXBvcmFyeSIsInN1bW1hcnkiOiJPZmZpY2lhbHMgYW5kIGxvY2FsIG91dGxldHMgc2F5IHRoZSBjcm9zc2luZyByZW9wZW5zIG9uY2UgcmVwYWlycyBmaW5pc2guIiwic3VwcG9ydF9jb3VudCI6MzgsInN1cHBvcnRfYnlfc291cmNlIjp7Im1lZGlhIjoxMSwic29jaWFscyI6MjUsIml3aXRuZXNzIjoyfSwiY29uZmlkZW5jZSI6MC43NCwiaXNfYWxwaGEiOmZhbHNlfSx7InZpZXdwb2ludF9pZCI6Im9wbl84ZjJkIiwibGFiZWwiOiJUcmFmZmljIGlzIGJlaW5nIGRpdmVydGVkIGZvciB3ZWVrcyIsInN1bW1hcnkiOiJGcmVpZ2h0IG9wZXJhdG9ycyByZXBvcnQgcmVyb3V0ZWQgc2hpcG1lbnRzIGFuZCBsb25nZXIgd2FpdHMuIiwic3VwcG9ydF9jb3VudCI6MTcsInN1cHBvcnRfYnlfc291cmNlIjp7Im1lZGlhIjozLCJzb2NpYWxzIjoxNCwiaXdpdG5lc3MiOjB9LCJjb25maWRlbmNlIjowLjQxLCJpc19hbHBoYSI6dHJ1ZX1dLCJhcnRpY2xlX3VybCI6Imh0dHBzOi8vc2Vuc2UucXVvcnVtei5jb20vcXVvcnVtL3FybV83YzFlIn1dLCJuZXh0X2N1cnNvciI6ImNfMjAyNi0xMC0yN1QwOTo0MDowMFpfcXJtXzdjMWUifX19LCJzY2hlbWEiOnsiJHNjaGVtYSI6Imh0dHBzOi8vanNvbi1zY2hlbWEub3JnL2RyYWZ0LzIwMjAtMTIvc2NoZW1hIiwidHlwZSI6Im9iamVjdCIsInByb3BlcnRpZXMiOnsiaW5wdXQiOnsidHlwZSI6Im9iamVjdCIsInByb3BlcnRpZXMiOnsidHlwZSI6eyJ0eXBlIjoic3RyaW5nIiwiY29uc3QiOiJodHRwIn0sIm1ldGhvZCI6eyJ0eXBlIjoic3RyaW5nIiwiZW51bSI6WyJHRVQiXX0sInF1ZXJ5UGFyYW1zIjp7InR5cGUiOiJvYmplY3QiLCJwcm9wZXJ0aWVzIjp7ImNvdW50cnkiOnsidHlwZSI6InN0cmluZyJ9LCJsaW1pdCI6eyJ0eXBlIjoic3RyaW5nIn19fX0sInJlcXVpcmVkIjpbInR5cGUiLCJtZXRob2QiXX0sIm91dHB1dCI6eyJ0eXBlIjoib2JqZWN0IiwicHJvcGVydGllcyI6eyJ0eXBlIjp7InR5cGUiOiJzdHJpbmcifSwiZXhhbXBsZSI6eyJ0eXBlIjoib2JqZWN0In19LCJyZXF1aXJlZCI6WyJ0eXBlIl19fSwicmVxdWlyZWQiOlsiaW5wdXQiXX19fSwiZXJyb3IiOiJQQVlNRU5ULVNJR05BVFVSRSBoZWFkZXIgaXMgcmVxdWlyZWQiLCJhbHRlcm5hdGl2ZXMiOnsiYXBpX2tleSI6eyJzaWdudXAiOiJodHRwczovL3NlbnNlLnF1b3J1bXouY29tL2FnZW50cy9rZXlzIiwicGF5X3dpdGgiOiJjcmVkaXQgY2FyZCBvciBQYXlQYWwiLCJmcmVlX3RyaWFsIjoidGhlIGZpcnN0IDEwMCBjYWxscyBvdmVyIDcgZGF5cyJ9fX0="
+  },
+  "body": {
+    "x402Version": 2,
+    "resource": {
+      "url": "https://api.quorumz.com/api/agent/v1/quorums",
+      "description": "One story, the viewpoints being expressed, and the posts supporting each viewpoint.",
+      "mimeType": "application/json",
+      "serviceName": "Quorumz",
+      "tags": [
+        "news",
+        "quorum",
+        "geopolitics"
+      ],
+      "iconUrl": "https://sense.quorumz.com/brand/quorumz-tile-512.png"
+    },
+    "accepts": [
+      {
+        "scheme": "exact",
+        "network": "eip155:8453",
+        "amount": "20000",
+        "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "payTo": "0x9ce92953d33237af061c6b1aa29c597c8656b547",
+        "maxTimeoutSeconds": 300,
+        "extra": {
+          "name": "USD Coin",
+          "version": "2"
+        }
+      },
+      {
+        "scheme": "exact",
+        "network": "eip155:137",
+        "amount": "20000",
+        "asset": "0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359",
+        "payTo": "0x9ce92953d33237af061c6b1aa29c597c8656b547",
+        "maxTimeoutSeconds": 300,
+        "extra": {
+          "name": "USD Coin",
+          "version": "2"
+        }
+      },
+      {
+        "scheme": "exact",
+        "network": "eip155:42161",
+        "amount": "20000",
+        "asset": "0xaf88d065e77c8cC2239327C5EDb3A432268e5831",
+        "payTo": "0x9ce92953d33237af061c6b1aa29c597c8656b547",
+        "maxTimeoutSeconds": 300,
+        "extra": {
+          "name": "USD Coin",
+          "version": "2"
+        }
+      }
+    ],
+    "extensions": {
+      "bazaar": {
+        "info": {
+          "input": {
+            "type": "http",
+            "method": "GET",
+            "queryParams": {
+              "country": "LB",
+              "limit": "2"
+            }
+          },
+          "output": {
+            "type": "json",
+            "example": {
+              "stream": "quorum",
+              "filter": {
+                "country": "LB"
+              },
+              "quorums": [
+                {
+                  "quorum_id": "qrm_7c1e",
+                  "headline": "Border crossing closed after flood damage",
+                  "summary": "Two readings of the closure: a short repair or a long diversion of freight.",
+                  "category": "infrastructure",
+                  "countries": [
+                    "LB"
+                  ],
+                  "support_count": 55,
+                  "confidence": 0.68,
+                  "is_alpha": true,
+                  "updated_at": "2026-10-27T09:40:00Z",
+                  "viewpoints": [
+                    {
+                      "viewpoint_id": "opn_8f2c",
+                      "label": "The closure is temporary",
+                      "summary": "Officials and local outlets say the crossing reopens once repairs finish.",
+                      "support_count": 38,
+                      "support_by_source": {
+                        "media": 11,
+                        "socials": 25,
+                        "iwitness": 2
+                      },
+                      "confidence": 0.74,
+                      "is_alpha": false
+                    },
+                    {
+                      "viewpoint_id": "opn_8f2d",
+                      "label": "Traffic is being diverted for weeks",
+                      "summary": "Freight operators report rerouted shipments and longer waits.",
+                      "support_count": 17,
+                      "support_by_source": {
+                        "media": 3,
+                        "socials": 14,
+                        "iwitness": 0
+                      },
+                      "confidence": 0.41,
+                      "is_alpha": true
+                    }
+                  ],
+                  "article_url": "https://sense.quorumz.com/quorum/qrm_7c1e"
+                }
+              ],
+              "next_cursor": "c_2026-10-27T09:40:00Z_qrm_7c1e"
+            }
+          }
+        },
+        "schema": {
+          "$schema": "https://json-schema.org/draft/2020-12/schema",
+          "type": "object",
+          "properties": {
+            "input": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string",
+                  "const": "http"
+                },
+                "method": {
+                  "type": "string",
+                  "enum": [
+                    "GET"
+                  ]
+                },
+                "queryParams": {
+                  "type": "object",
+                  "properties": {
+                    "country": {
+                      "type": "string"
+                    },
+                    "limit": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "required": [
+                "type",
+                "method"
+              ]
+            },
+            "output": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string"
+                },
+                "example": {
+                  "type": "object"
+                }
+              },
+              "required": [
+                "type"
+              ]
+            }
+          },
+          "required": [
+            "input"
+          ]
+        }
+      }
+    },
+    "error": "PAYMENT-SIGNATURE header is required",
+    "alternatives": {
+      "api_key": {
+        "signup": "https://sense.quorumz.com/agents/keys",
+        "pay_with": "credit card or PayPal",
+        "free_trial": "the first 100 calls over 7 days"
+      }
+    }
+  }
+}
