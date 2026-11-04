@@ -207,3 +207,11 @@ def test_over_the_cap_nothing_is_signed_or_sent(quorums_402: dict[str, Any]) -> 
     with pytest.raises(X402Error):
         Quorumz(x402=X402Payer(TEST_KEY, max_payment_usd=0.01)).quorums("LB", limit=2)
     assert route.call_count == 1
+
+
+def test_an_authorization_never_outlives_an_hour(quorums_402: dict[str, Any]) -> None:
+    """The server sets maxTimeoutSeconds; a hostile one must not get a signature valid for years."""
+    required = challenge(quorums_402)
+    required["accepts"] = [{**a, "maxTimeoutSeconds": 10**9} for a in required["accepts"]]
+    payment = X402Payer(TEST_KEY, network="polygon").create_payment(required, now=NOW, nonce=NONCE)
+    assert int(payment["payload"]["authorization"]["validBefore"]) == NOW + 3600

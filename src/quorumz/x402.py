@@ -38,6 +38,8 @@ __all__ = ["NETWORKS", "UsdcNetwork", "X402Payer", "decode_payment_required", "e
 
 X402_VERSION = 2
 DEFAULT_MAX_PAYMENT_USD = 1.0
+# The longest an authorization may stay valid, whatever maxTimeoutSeconds says.
+MAX_VALID_SECONDS = 3600
 # How far back validAfter reaches, to tolerate clock skew between the payer,
 # the facilitator and the chain. The x402 reference clients use 600 seconds.
 VALID_AFTER_SKEW_SECONDS = 600
@@ -229,7 +231,9 @@ class X402Payer:
         nonce = os.urandom(32) if nonce is None else nonce
         if len(nonce) != 32:
             raise ValueError("nonce must be 32 bytes")
-        timeout = int(entry.get("maxTimeoutSeconds") or 300)
+        # The server sets the authorization's lifetime; never sign one that
+        # stays valid for more than an hour.
+        timeout = min(int(entry.get("maxTimeoutSeconds") or 300), MAX_VALID_SECONDS)
         authorization = {
             "from": self.address,
             "to": to_checksum_address(entry["payTo"]),
